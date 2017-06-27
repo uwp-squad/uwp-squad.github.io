@@ -1,2 +1,3 @@
 # uwp-squad.github.io
-website of uwp-squad tem
+
+UWP Squad website

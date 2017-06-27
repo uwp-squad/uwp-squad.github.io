@@ -1,0 +1,55 @@
+body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background: url(../img/city_background.jpg) no-repeat 0px -300px fixed;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 98px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+header h2 {
+  font-size: 58px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+section.our-goal {
+  background-color: #fff;
+  padding-bottom: 20px;
+  z-index: 10;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.our-goal .container {
+  text-align: center;
+}
+
+section.uwp {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+section.showcase {
+  background-color: #fff;
+  padding-bottom: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.showcase .container {
+  text-align: center;
+}
+
+section.join-us {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.join-us .container {
+  text-align: center;
+}
