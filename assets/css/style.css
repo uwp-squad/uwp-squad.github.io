@@ -1,6 +1,7 @@
 body {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  background: url(../img/city_background.jpg) no-repeat 0px -300px fixed;
+  background: url(../img/city_background.jpg) no-repeat fixed ;
+    background-size: auto ; 
 }
 
 header {
