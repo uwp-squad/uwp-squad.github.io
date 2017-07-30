@@ -9,62 +9,68 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/animations-ie-fix.css">
+    <![endif]-->
 </head>
 
 <body>
-    <header>
+    <header class="animatedParent animateOnce" data-sequence="500">
         <div class="container">
-            <h1>UWP</h1>
-            <h2>Squad</h2>
+            <h1 class="animated fadeInDown" data-id="1">UWP</h1>
+            <h2 class="animated fadeInDown" data-id="2">Squad</h2>
         </div>
     </header>
 
-    <section class="our-goal">
-        <div class="container">
-            <h2>Our goal</h2>
-            <h4 style="margin-top: 20px;">
+    <section class="our-goal animatedParent" data-sequence="800">
+        <div class="container ">
+            <h2 class="animated fadeIn" data-id="1">Our goal</h2>
+            <h4 class="animated fadeIn" data-id="2" style="margin-top: 20px;">
                 <i>We are a team of passionate developers who want to create beautiful apps for the Windows 10 platform.</i>
             </h4>
 
             <div class="row" style="margin-top: 50px;">
                 <div class="col-xs-12 col-sm-4">
-                    <div>All platforms</div>
+                    <div class="animated growIn" data-id="3">All platforms</div>
                     
-                    <img src="assets/img/all-platforms.png" style="max-width: 350px; margin-top: 55px; margin-bottom: 35px;" />
+                    <img class="animated growIn" data-id="4" src="assets/img/all-platforms.png" style="max-width: 350px; margin-top: 55px; margin-bottom: 35px;" />
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div>Great design</div>
+                    <div class="animated growIn" data-id="5">Great design</div>
 
-                    <img src="assets/img/fluent-design.jpg" style="max-width: 300px;" />
+                    <img class="animated growIn" data-id="6" src="assets/img/fluent-design.jpg" style="max-width: 300px;" />
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div>A community of craftsmen</div>
+                    <div class="animated growIn" data-id="7">A community of craftsmen</div>
 
-                    <img src="assets/img/Work_In_Progress.png" style="max-height: 150px; margin-top: 50px; margin-bottom: 50px;" />
+                    <img class="animated growIn" data-id="8" src="assets/img/Work_In_Progress.png" style="max-height: 150px; margin-top: 50px; margin-bottom: 50px;" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="uwp">
+    <section class="uwp animatedParent">
         <div class="container">
-            <img src="assets/img/uwp_platform.png" style="max-width: 100%; height: auto;" />
+            <img class="animated fadeIn" src="assets/img/uwp_platform.png" style="max-width: 100%; height: auto;" />
         </div>
     </section>
 
     <section class="showcase">
         <div class="container">
-            <h2>Showcase</h2>
+            <div class="animatedParent">
+                <h2 class="animated fadeIn">Showcase</h2>
+            </div>
 
-            <div class="jumbotron" style="margin-top: 20px; padding: 0;">
+            <div class="jumbotron animatedParent" data-sequence="500" style="margin-top: 20px; padding: 0;">
                 <div class="container">
-                    <img src="assets/img/apps/tvshowtime-w10-logo.png" style="background-color: #272727; margin-top: 20px; max-height: 70px;"
+                    <img class="animated fadeIn" data-id="1" src="assets/img/apps/tvshowtime-w10-logo.png" style="background-color: #272727; margin-top: 20px; max-height: 70px;"
                     />
 
-                    <h3>TVShow Time for Windows 10</h3>
+                    <h3 class="animated fadeIn" data-id="2">TVShow Time for Windows 10</h3>
 
                     <p>
-                        <h5>
+                        <h5 class="animated fadeIn" data-id="3">
                             TVShow Time will help you to manage your agenda of series, share your favorite series with your friends and discover new
                             ones. With the new Windows 10 application, easily track your favorites TV series and receive
                             notifications as soon as a new episode aired.
@@ -72,15 +78,15 @@
                     </p>
 
                     <p class="row">
-                        <div class="col-md-4 col-xs-12" style="text-align: center;">
-                            <img src="assets/img/apps/tvshowtime-image1.png" style="max-width: 200px;" />
+                        <div class="col-md-4 col-xs-12 " style="text-align: center;">
+                            <img class="animated fadeIn" data-id="4" src="assets/img/apps/tvshowtime-image1.png" style="max-width: 200px;" />
                         </div>
                         <div class="col-md-8 col-xs-12" style="text-align: center; margin-top: 15px;">
-                            <img src="assets/img/apps/tvshowtime-image2.png" style="max-width: 500px;" />
+                            <img class="animated fadeIn" data-id="5" src="assets/img/apps/tvshowtime-image2.png" style="max-width: 500px;" />
                         </div>
                     </p>
 
-                    <p class="col-xs-12" style="margin-top: 20px;">
+                    <p class="col-xs-12 animated fadeIn" data-id="6" style="margin-top: 20px;">
                         <a class="btn btn-default btn-lg" href="https://www.microsoft.com/fr-fr/store/p/tvshow-time-for-windows-10/9p1g74k2ct4j"
                             target="_blank" role="button">
                             <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
@@ -95,29 +101,29 @@
                 </div>
             </div>
 
-            <div class="jumbotron" style="padding: 0;">
+            <div class="jumbotron animatedParent" data-sequence="500" style="padding: 0;">
                 <div class="container">
-                    <img src="assets/img/apps/livecoding-w10-logo.png" style="background-color: #272727; margin-top: 20px; max-height: 70px;"
+                    <img class="animated fadeIn" data-id="1" src="assets/img/apps/livecoding-w10-logo.png" style="background-color: #272727; margin-top: 20px; max-height: 70px;"
                     />
 
-                    <h3>Livecoding for Windows 10</h3>
+                    <h3 class="animated fadeIn" data-id="2">Livecoding for Windows 10</h3>
 
                     <p>
-                        <h5>
+                        <h5 class="animated fadeIn" data-id="3">
                             Livecoding for Windows 10 gives you access to Livecoding livestreams.
                         </h5>
                     </p>
 
                     <p class="row">
-                        <div class="col-md-8 col-xs-12" style="text-align: center; margin-top: 15px;">
+                        <div class="col-md-8 col-xs-12 animated fadeIn" data-id="4" style="text-align: center; margin-top: 15px;">
                             <img src="assets/img/apps/livecoding-image1.png" style="max-width: 500px;" />
                         </div>
-                        <div class="col-md-4 col-xs-12" style="text-align: center;">
+                        <div class="col-md-4 col-xs-12 animated fadeIn" data-id="4" style="text-align: center;">
                             <img src="assets/img/apps/livecoding-image2.png" style="max-width: 200px;" />
                         </div>
                     </p>
 
-                    <p class="col-xs-12" style="margin-top: 20px;">
+                    <p class="col-xs-12 animated fadeIn" data-id="6" style="margin-top: 20px;">
                         <a class="btn btn-default btn-lg" href="https://www.microsoft.com/store/apps/9mzxhd72lwql" target="_blank" role="button">
                             <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
                             <span style="margin-left: 10px;">Download</span>
@@ -133,12 +139,12 @@
         </div>
     </section>
 
-    <section class="join-us">
+    <section class="join-us animatedParent" data-sequence="500">
         <div class="container">
-            <h2>Join us</h2>
+            <h2 class="animated fadeIn" data-id="1">Join us</h2>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 animated growIn" data-id="2">
                     Chat with us on Gitter
 
                     <div style="margin-top: 10px;">
@@ -148,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 animated growIn" data-id="3">
                     Collaborate on GitHub
 
                     <div style="margin-top: 10px;">
@@ -161,12 +167,12 @@
         </div>
     </section>
 
-    <section class="team">
-        <div class="container">
-            <h2>Team</h2>
+    <section class="team animatedParent" data-sequence="200">
+        <div class="container ">
+            <h2 class="animated fadeIn" data-id="1">Team</h2>
 
             <div class="row">
-                <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="2">
                     André Vandenbosch </br>
                     <a href="https://github.com/andre726">@andre726</a>
 
@@ -177,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="3">
                     David Bottiau </br>
                     <a href="https://github.com/Odonno">@Odonno</a> <br />
 
@@ -188,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="4">
                     Nicolas Hoang </br>
                     <a href="https://github.com/nicolas160997">@nicolas160997</a>
 
@@ -203,6 +209,7 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/css3-animate-it.js"></script>
 </body>
 
 </html>
