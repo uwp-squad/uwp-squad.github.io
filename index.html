@@ -33,18 +33,18 @@
             <div class="row" style="margin-top: 50px;">
                 <div class="col-xs-12 col-sm-4">
                     <div class="animated growIn" data-id="3">All platforms</div>
-                    
-                    <img class="animated growIn" data-id="4" src="assets/img/all-platforms.png" style="max-width: 350px; margin-top: 55px; margin-bottom: 35px;" />
+
+                    <img class="all-platforms-img animated growIn" data-id="4" src="assets/img/all-platforms.png" />
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="animated growIn" data-id="5">Great design</div>
 
-                    <img class="animated growIn" data-id="6" src="assets/img/fluent-design.jpg" style="max-width: 300px;" />
+                    <img class="fluent-design-img animated growIn" data-id="6" src="assets/img/fluent-design.jpg" />
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="animated growIn" data-id="7">A community of craftsmen</div>
 
-                    <img class="animated growIn" data-id="8" src="assets/img/Work_In_Progress.png" style="max-height: 150px; margin-top: 50px; margin-bottom: 50px;" />
+                    <img class="work-in-progress-img animated growIn" data-id="8" src="assets/img/Work_In_Progress.png" />
                 </div>
             </div>
         </div>
@@ -115,10 +115,10 @@
                     </p>
 
                     <p class="row">
-                        <div class="col-md-8 col-xs-12 animated fadeIn" data-id="4" style="text-align: center; margin-top: 15px;">
+                        <div class="col-md-8 col-xs-12 livecoding-image1 animated fadeIn" data-id="4" style="text-align: center; margin-top: 15px;">
                             <img src="assets/img/apps/livecoding-image1.png" style="max-width: 500px;" />
                         </div>
-                        <div class="col-md-4 col-xs-12 animated fadeIn" data-id="4" style="text-align: center;">
+                        <div class="col-md-4 col-xs-12 livecoding-image2 animated fadeIn" data-id="4" style="text-align: center;">
                             <img src="assets/img/apps/livecoding-image2.png" style="max-width: 200px;" />
                         </div>
                     </p>
@@ -139,40 +139,12 @@
         </div>
     </section>
 
-    <section class="join-us animatedParent" data-sequence="500">
-        <div class="container">
-            <h2 class="animated fadeIn" data-id="1">Join us</h2>
-
-            <div class="row">
-                <div class="col-md-6 animated growIn" data-id="2">
-                    Chat with us on Gitter
-
-                    <div style="margin-top: 10px;">
-                        <a href="https://gitter.im/uwp-squad/general">
-                            <img src="assets/img/gitter.svg" style="max-height: 50px;" />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 animated growIn" data-id="3">
-                    Collaborate on GitHub
-
-                    <div style="margin-top: 10px;">
-                        <a href="https://github.com/uwp-squad">
-                            <img src="assets/img/github.png" style="max-height: 50px;" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="team animatedParent" data-sequence="200">
-        <div class="container ">
+        <div class="container">
             <h2 class="animated fadeIn" data-id="1">Team</h2>
 
             <div class="row">
-                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="2">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="2" style="text-align: center">
                     André Vandenbosch </br>
                     <a href="https://github.com/andre726">@andre726</a>
 
@@ -183,7 +155,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="3">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="3" style="text-align: center">
                     David Bottiau </br>
                     <a href="https://github.com/Odonno">@Odonno</a> <br />
 
@@ -194,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="4">
+                <div class="col-xs-4 col-sm-3 col-md-2 animated pulse" data-id="4" style="text-align: center">
                     Nicolas Hoang </br>
                     <a href="https://github.com/nicolas160997">@nicolas160997</a>
 
@@ -205,6 +177,35 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="join-us animatedParent" data-sequence="500">
+        <div class="container">
+            <h2 class="animated fadeIn" data-id="1">Join us</h2>
+
+            <div class="row">
+                <div class="col-md-6 join-us-element animated growIn" data-id="2">
+                    Chat with us on Gitter
+
+                    <div style="margin-top: 10px;">
+                        <a href="https://gitter.im/uwp-squad/general">
+                            <img src="assets/img/gitter.svg" style="max-height: 50px;" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 join-us-element animated growIn" data-id="3">
+                    Collaborate on GitHub
+
+                    <div style="margin-top: 10px;">
+                        <a href="https://github.com/uwp-squad">
+                            <img src="assets/img/github.png" style="max-height: 50px;" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="assets/js/jquery.min.js"></script>
